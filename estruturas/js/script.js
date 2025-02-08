@@ -77,33 +77,111 @@
 
 // 10 estruturas de controle
 
-let idade3 = prompt("Digite sua idade: ");
-let nome;
+// let idade3 = prompt("Digite sua idade: ");
+// let nome;
 
-if (idade3 >= 18) {
-    console.log("Maior de idade");
-    nome = "João";
-}else if (idade3 >= 12) {
-    console.log("Adolescente");
-    nome = "Maria";
-}else {
-    console.log("Criança");
-    nome = "José";
+// if (idade3 >= 18) {
+//     console.log("Maior de idade");
+//     nome = "João";
+// }else if (idade3 >= 12) {
+//     console.log("Adolescente");
+//     nome = "Maria";
+// }else {
+//     console.log("Criança");
+//     nome = "José";
+// }
+
+// console.log(`Nome: ${nome}`);
+// if(nome === "João"){
+//     console.log("Vai uma cachaça aí?");
+// }else if(nome === "Maria"){
+//     console.log("Vai um suco aí?");
+// }else{
+//     console.log("Vai um toddynho aí?");
+// }
+
+// let logado = false;
+
+// if(logado){
+//     console.log("Usuário logado");
+// }else{
+//     console.log("Faça o login para progredir")
+// }
+
+// 11 Estruturas de repetição
+
+for(let i = 0; i < 10; i++){
+    console.log(i);
 }
 
-console.log(`Nome: ${nome}`);
-if(nome === "João"){
-    console.log("Vai uma cachaça aí?");
-}else if(nome === "Maria"){
-    console.log("Vai um suco aí?");
-}else{
-    console.log("Vai um toddynho aí?");
+while(true){
+    console.log("Olá");
+    break;
+}
+let p = 0;
+while(p<5){
+    console.log(p**2);
+    p++;
 }
 
-let logado = false;
+do {
+    console.log("Olá");
+}while(false);
 
-if(logado){
-    console.log("Usuário logado");
-}else{
-    console.log("Faça o login para progredir")
+do{
+    console.log(p);
+    p++;
+}while(p<6);
+
+for(let j = 0; j < 10; j++){
+    if(j%2 == 0){
+        console.log("par");
+    }else{
+        console.log("impar");
+    }
 }
+
+// 13 Identação
+
+for(let i = 0; i < 10; i++){
+    for(let j = 0; j < 10; j++){
+        console.log(i + " " + j);
+    }
+}
+
+// 14 Break e Continue
+
+for(let i = 0; i < 10; i++){
+    if(i === 5){
+        continue;
+    }
+    console.log(i);
+}
+
+for(let i = 0; i < 10; i++){
+    if(i === 5){
+        break;
+    }
+    console.log(i);
+}
+
+// 15 Switch
+
+const job = "Advogado";
+
+switch(job){
+    case "Desenvolvedor":
+        console.log("Programar");
+        break;
+    case "Advogado":
+        console.log("Defender");
+        break;
+    default:
+        console.log("Outra coisa");
+}
+
+// 16 convenções de nome
+
+let nomeCompleto = "João"; // Camel Case
+let nome_completo = "Maria"; // Snake Case
+let NomeCompleto = "José"; // Pascal Case
